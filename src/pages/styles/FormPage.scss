@@ -1,0 +1,129 @@
+.formPage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100dvh;
+    animation: fadeIn 0.5s ease;
+
+    .linkPage {
+        position: fixed;
+        top: 4vh;
+        right: 5vh;
+        font-size: 0.9rem;
+        color: var(--white);
+        line-height: 1;
+        border: none;
+        outline: 1px solid var(--border-color);
+        padding: 12px 18px;
+        border-radius: 6px;
+    }
+
+    .formContainer {
+        max-width: 350px;
+        width: 100%;
+        margin: 0 30px;
+
+        h1 {
+            font-size: 2rem;
+            margin-bottom: 24px;
+            color: var(--white);
+            text-align: center;
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+
+            label {
+                font-size: 0.9rem;
+                color: var(--grey);
+                margin-bottom: 8px;
+            }
+
+            // .showPassword {
+            //     display: inline-flex;
+            //     margin-bottom: 26px;
+            // }
+
+            .errorOutline {
+                outline-color: var(--red) !important;
+            }
+
+            input:not([type="checkbox"]) {
+                font-family: inherit;
+                font-size: 0.9rem;
+                margin-bottom: 14px;
+                padding: 10px 14px;
+                border-radius: 6px;
+                border: 1px solid var(--border-color);
+                outline: 2px solid transparent;
+                // outline-offset: 2px;
+                background-color: transparent;
+                transition: outline 0.3s ease;
+
+                &:focus {
+                    outline-color: #5c5c5c;
+                }
+
+                // &:last-of-type {
+                //     margin-bottom: 10px;
+                // }
+            }
+
+            .forgotPassword {
+                font-size: 0.9rem;
+                color: var(--grey);
+                margin-bottom: 14px;
+                text-align: right;
+                cursor: pointer;
+                transition: color 0.2s ease;
+
+                &:hover {
+                    color: var(--white);
+                }
+            }
+
+            input[type="checkbox"] {
+                margin-left: 10px;
+            }
+
+            button {
+                font-family: inherit;
+                font-size: 0.9rem;
+                font-weight: 600;
+                color: var(--black);
+                background-color: #e7e7e7;
+                border-radius: 6px;
+                border: none;
+                padding: 10px 14px;
+                cursor: pointer;
+                margin-top: 20px;
+                transition: background-color 0.2s ease;
+
+                &[disabled] {
+                    cursor: not-allowed;
+                    background-color: #acacac !important;
+                }
+
+                &:hover {
+                    background-color: var(--dark-white);
+                }
+            }
+
+        }
+
+        .errorMessage {
+            position: absolute;
+            width: 100%;
+            max-width: 350px;
+            color: var(--red);
+            background-color: var(--dark-red);
+            font-size: 0.85rem;
+            font-style: italic;
+            line-height: 1;
+            border-radius: 6px;
+            margin-top: 18px;
+            padding: 14px;
+        }
+    }
+}

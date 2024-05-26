@@ -1,0 +1,48 @@
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+#root {
+  min-height: 100dvh;
+  width: 100%;
+  // background-color: var(--black);
+  background: linear-gradient(0deg, #000000, #252525);
+
+  // background: url('https://img.freepik.com/free-photo/abstract-luxury-gradient-blue-background-smooth-dark-blue-with-black-vignette-studio-banner_1258-63464.jpg?t=st=1716745974~exp=1716749574~hmac=572125d1e3afc450ef657e967f0defb47eff2468e4a933c94c6492b6114a27e4&w=1480');
+  // background-size: cover;
+  // background-position: center;
+  // background-attachment: fixed;
+}
+
+::selection {
+  background-color: #0000001f;
+} 
+
+a {
+  user-select: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}

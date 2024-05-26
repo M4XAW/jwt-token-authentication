@@ -1,0 +1,32 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+:root {
+  font-family: 'Dm Sans', system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color-scheme: light dark;
+  color: rgba(255, 255, 255, 0.87);
+  background-color: #242424;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --font: 'Dm Sans', sans-serif;
+  --white: #ffffff;
+  --green: #34ffbf;
+  --dark-white: #d3d3d3;
+  --black: #000000;
+  --light-black: #080808;
+  --grey: #b3b3b3;
+  --red: #ff5858;
+  --dark-red: #300b0b;
+  --padding-2-5: 2.5vh;
+  --blue: #0066FF;
+  --border-color: #3f3f3f;
+  --border-radius: 0.5rem;
+  --border: 1px solid var(--border-color);
+}
