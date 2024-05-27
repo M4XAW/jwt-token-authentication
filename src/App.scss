@@ -25,10 +25,17 @@
 
 ::selection {
   background-color: #0000001f;
-} 
+}
 
 a {
   user-select: none;
+}
+
+.textGradient {
+  color: transparent;
+  background: linear-gradient(0deg, #3f3f3f, #ffffff);
+  background-clip: text;
+  -webkit-background-clip: text;
 }
 
 @media (prefers-reduced-motion: no-preference) {

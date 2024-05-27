@@ -7,7 +7,7 @@ export default function Profile() {
 
     return (
         <div className="profile">
-            <h1>Welcome back</h1>
+            <h1 className='textGradient'>Welcome back, {user.username}</h1>
         </div>
     )
 }
