@@ -64,7 +64,7 @@ export default function Login() {
         <div className="formPage">
             {/* <Link to="/register" className="linkPage">Créer un compte</Link> */}
             <div className="formContainer">
-                <h1>Se connecter</h1>
+                <h1 className='textGradient'>Se connecter</h1>
                 <form onSubmit={handleFormSubmit}>
                     <label htmlFor="username">Nom d'utilisateur</label>
                     <input

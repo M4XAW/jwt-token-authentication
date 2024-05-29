@@ -65,7 +65,7 @@ export default function Register() {
         <div className="formPage">
             {/* <Link to="/login" className="linkPage">Se connecter</Link> */}
             <div className="formContainer">
-                <h1>Créer un compte</h1>
+                <h1 className='textGradient'>Créer un compte</h1>
                 <form onSubmit={handleFormSubmit}>
                     <label htmlFor="username">Nom d'utilisateur</label>
                     <input
